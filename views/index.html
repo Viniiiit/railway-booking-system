@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Ticket Booking</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="booking-form">
+            <h1>Book Your Railway Ticket</h1>
+            <form id="bookingForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="trainNumber">Train Number</label>
+                <input type="text" id="trainNumber" name="trainNumber" required placeholder="Enter train number">
+
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="seats">Seats</label>
+                <input type="number" id="seats" name="seats" required placeholder="Number of seats">
+
+                <button type="submit">Book Ticket</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

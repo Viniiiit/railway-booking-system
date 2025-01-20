@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Success</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-message">
+            <h1>Booking Successful!</h1>
+            <p>Thank you <strong id="name"></strong>, your ticket for Train No. <strong id="trainNumber"></strong> has been successfully booked!</p>
+            <button onclick="window.location.href='/'">Back to Booking Form</button>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById("name").innerText = urlParams.get("name");
+        document.getElementById("trainNumber").innerText = urlParams.get("trainNumber");
+    </script>
+</body>
+</html>
